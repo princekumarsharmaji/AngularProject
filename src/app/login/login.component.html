@@ -1,0 +1,31 @@
+<div class="login-container">
+    <div class="logo">Majha Block</div>
+    <div class="desc">
+        During the partition of India in 1947, the Majha region of Punjab was split between India and Pakistan when the
+        Indian Punjab and Pakistani Punjab were formed. The Majha region of Indian State of Punjab covers the area
+        between Beas and Ravi rivers, including the area on the north of Sutlej, after the confluence of Beas and Sutlej
+        at Harike in Tarn Taran district, extending up to the Ravi River, which is all part of the Majha region in
+        India.[4] This region contains fourteen districts of the Pakistani province of Punjab, including the cities of
+        Lahore, Faisalabad, Sahiwal, Pakpattan, Gujranwala, Gujrat, and Sialkot. Four districts of Indian state of
+        Punjab Amritsar, Tarn Taran, Gurdaspur, and Pathankot.
+    </div>
+
+
+    <div class="login-form">
+        <div class="form-group">
+            <label for = "uname">Username</label>
+            <input type="text" name="uname" class="form-control" [(ngModel)] = "username"  />
+        </div>
+        <br />
+        <div class="form-group">
+            <label for = "pword">Password</label>
+            <input type="password" name="pword" class="form-control" [(ngModel)] = "password"/>
+        </div>
+
+        <div class="btn-container">
+            <div class= "error">{{errorMsg}}</div>
+            <button (click) = "login()" class="btn btn-dark">Login</button>
+        </div>
+ 
+    </div>
+</div>
